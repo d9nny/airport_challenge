@@ -1,6 +1,22 @@
 Airport Challenge
 =================
+This has no user interface.
 
+Installation
+------------
+
+To clone the repo onto your machine:
+```sh
+$ git clone https://github.com/d9nny/airport_challenge
+```
+Navigate to the root folder, install Gems with:
+```sh
+$ bundle
+```
+To run tests:
+```sh
+$ rspec
+```
 My approach to the challenge was similar to the Boris Bikes Challenge. The Airport was the main class of the system that heald a collection of planes which are derived from the Plane class. I created a weather class to control teh weather. The Airport Class is responsible for making planes take off and land adding them or taking them out of the collection and changing their 'flight' status. The Airport class also takes care of the edge cases such as:
 
 Planes not being able to operate in bad weather.
